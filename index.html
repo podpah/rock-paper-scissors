@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="10"> 
+    <!--<meta http-equiv="refresh" content="10"> -->
     <title>Rock, Paper, Scissors</title>
 </head>
 <!--Me of the future I apologize for this mess-->
@@ -66,10 +66,10 @@ p {
     font-size: 2rem;
 }
 
-#pap, #sci {
+#roc, #pap {
     margin:0; padding-top:0rem;
 }
-#pap {
+#roc {
     padding-right: 2.5rem;
 }
 
@@ -77,7 +77,7 @@ p {
 
 <body>
     <div class="container">
-        <h1>Rock Paper Scissors</h1>
+        <h1><span id="ro">Rock</span> <span id="pa">Paper</span> <span id="sc">Scissors</span></h1>
         <div class="container2">
 
             <!--<img src="imgs/rps.png" alt="Rock Paper Scissors" usemap="#imap">
@@ -87,17 +87,18 @@ p {
                 <area target="" alt="Paper" href="" coords="298,281,275,324,260,392,373,503,447,511,511,353,440,279,349,253" shape="poly">
             </map>-->
 
-            <img class="icon2" id="roc"src="imgs/Scissors.png" alt="Scissors" onclick="bat('Scissors')"><br>
+            <img class="icon2" id="sci"src="imgs/Scissors.png" alt="Scissors" onclick="bat('Scissors');rsci()"><br>
             <!--<div class="break"></div>-->
-            <div class="fle"><img class="icon2" id="pap"src="imgs/rock.png" alt="Rock" onclick="bat('Rock')">
-            <img class="icon2"id="sci"src="imgs/Paper.png" alt="Paper" onclick="bat('Paper')"></div>
+            <div class="fle"><img class="icon2" id="roc"src="imgs/rock.png" alt="Rock" onclick="bat('Rock');rrock()">
+            <img class="icon2"id="pap"src="imgs/Paper.png" alt="Paper" onclick="bat('Paper');rpap()"></div>
             <output id="out"></output>
         </div>
 
         <div class="container3">
-            <img class="icon" src="imgs/player.png" alt="Your score"><p>:</p><p  class="tat" id="use"></p>
-            <br><img class="icon" src="imgs/robot.png" alt="Bot's score"><p>:</p><p class="tat"  id="rob"></p>
+            <img class="icon" id="uimg" src="imgs/player.png" alt="Your score"><p id="uscore">:</p><p  class="tat" id="use"></p>
+            <br><img class="icon" src="imgs/robot.png" alt="Bot's score" id="bscore"><p id="rob2">:</p><p class="tat"  id="rob"></p>
         </div>
     </div>
+    <!--<input type="text" id="ucolor1" title="blank"><button onclick="ucolor()">Enter</button>-->
 </body>
 </html>
