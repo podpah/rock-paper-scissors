@@ -67,4 +67,6 @@ rpap = () => {pap.src = "imgs/redpaper.png" ; sci.src = "imgs/Scissors.png" ; ro
 }
 rsci = () => {sci.src = "imgs/redscissors.png" ; roc.src = "imgs/rock.png" ; pap.src = "imgs/Paper.png" ; pa.style.color = "black" ; ro.style.color = "black" ; sc.style.color = "red"
     if (rand =="Rock") {roc.src = "imgs/bluerock.png" ;  ro.style.color = "#4d8bf4"} else if (rand == "Paper" ) {pap.src = "imgs/bluepaper.png" ;  pa.style.color = "#4d8bf4"}
-} 
+}
+
+//player.style.setProperty("animation", "launch 2s ease-in");
