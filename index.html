@@ -35,7 +35,9 @@ p {display:inline}
 
 h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    font-size: 2.5rem;
 }
 #out {
     text-align: center;
@@ -73,6 +75,46 @@ p {
     padding-right: 2.5rem;
 }
 
+/* Scissors movement
+#sci {
+    animation:test 2s linear alternate;
+    position:relative;
+    background-color: transparent;
+}
+@keyframes test {
+  0%   {left:0px; top:0px;}
+  50% {left:12%; top:10rem;}
+  100% {left:0px; top:0px;}
+}*/
+
+/* Rock movement
+#roc {
+    animation: test2 2s linear alternate;
+    position:relative;
+    background-color: transparent;
+}
+
+@keyframes test2 {
+    0% {left:0%;top:0rem;}
+    50% {left:3.5rem;top:-10rem;}
+    100% {left:0%;top:0rem;}
+}*/
+
+/* Paper movement
+#pap  {
+    animation: test3 2s linear alternate;
+    position:relative;
+    background-color: transparent;
+}
+
+@keyframes test3 {
+    0% {right:0%;}
+    50% {right:8.5rem;}
+    100% {right:0%;}
+}*/
+
+/*Maybe add a delay between the hit and the going back, tiny but effective*/
+
 </style>
 
 <body>
@@ -86,7 +128,6 @@ p {
                 <area target="" alt="Rock" href="" coords="0,433,103,511,126,492,172,491,242,433,236,395,242,364,222,338,209,311,182,307,164,286,133,277,108,270,35,345" shape="poly">
                 <area target="" alt="Paper" href="" coords="298,281,275,324,260,392,373,503,447,511,511,353,440,279,349,253" shape="poly">
             </map>-->
-
             <img class="icon2" id="sci"src="imgs/Scissors.png" alt="Scissors" onclick="bat('Scissors');rsci()"><br>
             <!--<div class="break"></div>-->
             <div class="fle"><img class="icon2" id="roc"src="imgs/rock.png" alt="Rock" onclick="bat('Rock');rrock()">
